@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Sz-mb-BWi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--1-->
+        <scene sceneID="PoK-Zx-PKI">
+            <objects>
+                <viewController id="KLW-KA-Ay5" customClass="GTViewController" customModule="NavigationBarIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P75-1d-xLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gv8-ui-1dO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1" id="JpO-St-eir">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="D36-Dq-qOh">
+                            <connections>
+                                <action selector="backToMenu:" destination="KLW-KA-Ay5" id="uaf-he-mr0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="next" id="xeJ-66-U44">
+                            <connections>
+                                <segue destination="dSx-ra-iDK" kind="show" id="lKe-Ry-NDU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxQ-Nq-JLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="137"/>
+        </scene>
+        <!--2-->
+        <scene sceneID="gC9-wL-jln">
+            <objects>
+                <viewController id="dSx-ra-iDK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efZ-Ly-VpN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="U0W-s3-Pdz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="2" id="XLJ-5V-wSX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iP-eM-1pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wvd-OM-jXY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Sz-mb-BWi" customClass="GTNavigationController" customModule="NavigationBarIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lR1-HD-CiW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KLW-KA-Ay5" kind="relationship" relationship="rootViewController" id="1aY-9d-Hfh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9Y-Fd-Xd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397.60000000000002" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

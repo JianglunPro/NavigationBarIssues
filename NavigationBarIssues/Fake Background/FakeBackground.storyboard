@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3h5-Ph-faJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="OA6-B5-zKi">
+            <objects>
+                <navigationController id="3h5-Ph-faJ" customClass="FBNavigationController" customModule="NavigationBarIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d9D-Kb-5xb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qm2-VD-3XD" kind="relationship" relationship="rootViewController" id="UX3-cE-MX3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDH-Yl-DG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-266" y="220"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="zJb-MC-RIq">
+            <objects>
+                <viewController id="Qm2-VD-3XD" customClass="FBFirstViewController" customModule="NavigationBarIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aB-Qo-L1K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1GP-yW-9gc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="S1Q-3A-gYq">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="VxG-l7-G0m">
+                            <connections>
+                                <action selector="backToMenu:" destination="Qm2-VD-3XD" id="9KT-Ah-xgg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="next" id="ysS-Je-UyN">
+                            <connections>
+                                <segue destination="nI8-R3-W6a" kind="show" id="bYx-nJ-B0Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eo0-CK-ju0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="220"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="Tfs-M0-brr">
+            <objects>
+                <viewController id="nI8-R3-W6a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Upa-W9-bXw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e9o-1G-sU8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second" id="ZyU-zP-cI0">
+                        <barButtonItem key="rightBarButtonItem" title="next" id="wE0-KJ-D7w">
+                            <connections>
+                                <segue destination="a6A-J0-OnQ" kind="show" id="w7B-My-T9s"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mrc-Oz-BId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314" y="220"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="U3y-KE-01b">
+            <objects>
+                <viewController id="a6A-J0-OnQ" customClass="FBThirdViewController" customModule="NavigationBarIssues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8F-BK-v0G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nPp-Wz-M2b"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third" id="Qns-59-EzD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tQs-A6-Eri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="220"/>
+        </scene>
+    </scenes>
+</document>
